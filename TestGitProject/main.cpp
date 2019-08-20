@@ -1,19 +1,24 @@
 #include<stdio.h>
 
-int main()
+int CalculateSum(int n)
 {
-	int count = 0;
-	scanf("%d", &count);
-	for (int i = 0; i < count; ++i)
+	int sum = 0;
+	for (int i = 1; i <= n; ++i)
 	{
-		for (int j = 0; j < count -i; ++j)
-		{
-			printf("*");
-		}
-		printf("\n");
+		sum += i;
 	}
 
+	return sum;
+}
 
+int main()
+{
+	int index = 0;
 
+	scanf("%d", &index);
+
+	int sum = CalculateSum(index);
+
+	printf("%d", sum);
 	return 0;
 }
