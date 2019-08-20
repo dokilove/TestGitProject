@@ -2,10 +2,18 @@
 
 int main()
 {
-	int X = 0;
-	int Y = 10;
+	int count = 0;
+	scanf("%d", &count);
+	for (int i = 0; i < count; ++i)
+	{
+		for (int j = 0; j < count -i; ++j)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
 
-	printf("%d + %d = %d", X, Y, X+Y);
+
 
 	return 0;
 }
