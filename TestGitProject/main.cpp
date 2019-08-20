@@ -1,24 +1,12 @@
 #include<stdio.h>
-
-int CalculateSum(int n)
-{
-	int sum = 0;
-	for (int i = 1; i <= n; ++i)
-	{
-		sum += i;
-	}
-
-	return sum;
-}
+#include"util.h"
 
 int main()
 {
-	int index = 0;
+	int n = 0;
 
-	scanf("%d", &index);
+	scanf("%d", &n);
+	CheckOdd(n);
 
-	int sum = CalculateSum(index);
-
-	printf("%d", sum);
 	return 0;
 }
