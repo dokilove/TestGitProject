@@ -6,7 +6,11 @@ int main()
 	int n = 0;
 
 	scanf("%d", &n);
-	CheckOdd(n);
+	//CheckOdd(n);
+
+	int result = CalculateOddSum(n);
+
+	printf("%d", result);
 
 	return 0;
 }
